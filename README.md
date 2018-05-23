@@ -1,6 +1,6 @@
 # RatesToEuro
 
-he application is to receive exchange rates relative to the euro.
+The application is to receive exchange rates relative to the euro.
 
 When the Java model is launched, the application will be accessible from the browser at http://localhost:9015/*. You can write anything instead of * and you will still be redirected to index.html =).
 
