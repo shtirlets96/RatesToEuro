@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700");
+html {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  color: #1e4e58;
+  height: 100%; }
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%; }
+
+.header {
+  background-color: black;
+  min-height: 60px;
+  height: 60px;
+  padding-left: 40px; }
+  .header__logo {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+.container {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 100%; }
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto; }
+
+.page-description {
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 30px 0;
+  background-image: linear-gradient(30deg, #dcd964, #51bfcc);
+  margin-bottom: 20px;
+  color: #1e4e58; }
+
+.rate {
+  width: 100%;
+  border-bottom: dashed 1px #1e4e58;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 20px;
+  height: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .rate__logo {
+    width: 230px; }
+  .rate__couple {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    text-align: center; }
+  .rate__currency {
+    padding-right: 20px;
+    font-weight: 700; }
+
+footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  padding: 20px 0;
+  background-color: black;
+  color: #fff;
+  text-align: right;
+  flex: 0 0 auto; }
+
+@media (max-width: 1000px) {
+  .rates {
+    margin-bottom: 20px; }
+
+  .rate {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 90px; }
+    .rate__logo {
+      width: 100%;
+      text-align: center; } }
+@media (max-width: 725px) {
+  .rate {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 150px;
+    padding: 20px 0; }
+    .rate__logo, .rate__couple {
+      width: 100%;
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
+
+  .page-description {
+    font-size: 1.1rem; } }
