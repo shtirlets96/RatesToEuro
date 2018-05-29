@@ -1,5 +1,8 @@
 package app;
 
+import app.index.APIs.CPAPI;
+import app.index.APIs.FrXML;
+import app.index.APIs.OxrAPI;
 import app.index.EuroRate;
 import app.index.IndexController;
 
@@ -24,10 +27,10 @@ public class Applicaion {
         }
         pb.start();
         EuroRate ER = new EuroRate();
-        requestResult = ER.prepareOutputJson();
+        requestResult = ER.rate;
         port(9015);
         staticFileLocation("/public");
+        System.out.println("server is started at port 9015");
         IndexController.setControl();
-
     }
 }
